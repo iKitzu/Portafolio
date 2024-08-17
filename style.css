@@ -272,6 +272,7 @@ animation-delay: 2.5s;
 animation-delay: 3.5s;
 }
 
+
 /* End Hero Section */
 
 /* Services Section */
@@ -899,3 +900,14 @@ transition: color 0.3s ease; /* Animación suave para el cambio de color */
 
 /* */
 /* */
+
+.face {
+	font-size: 2em; /* Ajusta el tamaño según sea necesario */
+	display: inline-block;
+	transition: color 0.5s; /* Suaviza el cambio de color */
+  }
+  
+  .face.color1 { color: #ff6347; } /* Color tomate */
+  .face.color2 { color: #3cb371; } /* Color verde mar */
+  .face.color3 { color: #1e90ff; } /* Color azul */
+  

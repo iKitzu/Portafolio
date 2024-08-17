@@ -23,3 +23,21 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+
+function cycleFace() {
+const welcomeElement = document.getElementById('welcome');
+const baseText = 'Bienvenido ';
+const faces = ['(ᵔᵕᵔ)/', '(≧◡≦)/', '₍•͈ᴗ•͈₎'];
+let index = 0;
+
+function updateFace() {
+	welcomeElement.innerHTML = baseText + faces[index];
+	index = (index + 1) % faces.length;
+	setTimeout(updateFace, 2500); // Cambia la carita cada 2.5 segundos
+}
+
+updateFace();
+}
+
+document.addEventListener('DOMContentLoaded', cycleFace);
